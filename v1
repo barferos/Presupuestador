@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Presupuesto</title>
+</head>
+<body>
+    <h1>Calculadora de Presupuesto</h1>
+
+    <label for="higado">Cantidad de Hígado:</label>
+    <input type="number" id="higado" value="0">
+
+    <button id="calcular">Calcular Presupuesto</button>
+
+    <p id="resultado">El presupuesto es: $<span id="presupuesto">0</span></p>
+
+    <script>
+        document.getElementById('calcular').addEventListener('click', function () {
+            var cantidadHigado = parseInt(document.getElementById('higado').value);
+            var costoHigado = 120;
+            var presupuesto = cantidadHigado * costoHigado;
+            document.getElementById('presupuesto').textContent = presupuesto;
+        });
+    </script>
+</body>
+</html>
