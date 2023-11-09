@@ -9,18 +9,19 @@
             font-family: Arial, sans-serif; /* Estilo de fuente predeterminado */
         }
 
-        #imagen-de-fondo {
-            background-image: url('https://i.postimg.cc/76BJ1TH7/Whats-App-Image-2023-11-08-at-11-15-30-PM.jpg'); /* URL de la imagen */
-            background-size: auto; /* Mantiene el tamaño original de la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-position: right; /* Coloca la imagen a la derecha */
+        #contenedor-imagen {
+            float: right; /* Alinea el contenedor a la derecha */
+            margin-right: 20px; /* Agrega un margen a la derecha para separar el contenido */
+            /* Otros estilos que desees aplicar al contenedor */
         }
-
-        /* Resto de tu CSS aquí */
     </style>
 </head>
 <body>
     <h1>Calculadora de Presupuesto</h1>
+
+    <div id="contenedor-imagen">
+        <img src="https://i.postimg.cc/76BJ1TH7/Whats-App-Image-2023-11-08-at-11-15-30-PM.jpg" alt="Imagen">
+    </div>
 
     <label for="higado">Cantidad de Hígado:</label>
     <input type="number" id="higado" value="0">
